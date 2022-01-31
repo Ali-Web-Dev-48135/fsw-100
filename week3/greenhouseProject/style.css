@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 7px;
+  background-color: lightcyan;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.main-head-line__header {
+  text-align: center;
+  color: blue;
+}
+
+.second-head-line__header {
+  color: green;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  /* margin: 15px 0px; */
+  /* margin-top: 50px; */
+}
+
+.second-head-line__header.second-head-line__header__p {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+p b {
+  color: coral;
+}
+
+p {
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* margin-top: ; */
+}
+
+.first-p-line__paragraph {
+  margin-top: 25px;
+}
+
+#third-p-line__paragraph {
+  margin-top: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+#label-end__paragraph {
+  text-transform: uppercase;
+}
+
+img {
+  float: left;
+  margin: -20px 10px 0px 3px;
+  width: 180px;
+  height: 225px;
+}
+
+/* continue form here the ol list and fix the uncentered we live in a greenouse */
+
+ol {
+  position: relative;
+  display: inline-block;
+  right: 0;
+}
+
+ol {
+  list-style: disc;
+}
