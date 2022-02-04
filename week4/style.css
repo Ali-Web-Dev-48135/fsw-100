@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 1800px; /*Added fixed height to demonstrate the fixed nav on scroll */
+}
+body {
+  background-color: white;
+}
+
+#main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  height: 50px;
+  border-bottom: 0.5px solid black;
+  text-align: center;
+  padding-top: 15px;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  border-bottom: 1px solid white;
+}
+p {
+  line-height: 20px;
+}
+#main-tag {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  top: 25vh;
+  background-color: rgb(231, 228, 228);
+  padding: 20px;
+  height: 90%;
+  text-align: center;
+}
+
+.section-tag {
+  position: relative;
+  background-color: white;
+  max-width: 100%;
+  height: 190px;
+  overflow: hidden;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px lightsteelblue;
+  margin-top: 20px;
+}
+
+.section-tag .section-tag-header,
+h4 {
+  position: absolute;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.section-tag .section-tag-header {
+  top: 0;
+  left: 20%;
+  font-family: "Lato", sans-serif;
+}
+h4 {
+  top: 15%;
+  left: 20%;
+  margin-top: 5px;
+}
+
+p {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  display: inline-block;
+  text-align: left;
+  word-wrap: break-word;
+}
+img {
+  position: absolute;
+  display: inline-block;
+  width: 130px;
+  height: 90%;
+  left: 0;
+  top: 5%;
+  margin: 0px 0px 0px 10px;
+}
