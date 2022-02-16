@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "redBox redBox blueBox blueBox"
+    "greenBox purpleBox purpleBox purpleBox"
+    "yellowBox yellowBox yellowBox yellowBox";
+  border: 1px solid black;
+  padding: 5px 5px;
+  grid-gap: 8px;
+  width: 50%;
+  margin: 10px auto;
+  background-color: lightgoldenrodyellow;
+}
+
+.grid-container div {
+  height: 25px;
+  border: 0.5px solid black;
+  border-radius: 3px;
+}
+
+.red {
+  background-color: red;
+  grid-area: redBox;
+}
+
+.blue {
+  background-color: blue;
+  grid-area: blueBox;
+}
+
+.green {
+  background-color: green;
+  grid-area: greenBox;
+}
+
+.purple {
+  background-color: purple;
+  grid-area: purpleBox;
+}
+
+.yellow {
+  background-color: yellow;
+  grid-area: yellowBox;
+}
+
+/* Styles For The Second Image Demonstration */
+
+.grid-container-two {
+  display: grid;
+  width: 50%;
+  margin: 10px auto;
+  background-color: lightyellow;
+  border: 1px solid black;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px 5px;
+  grid-gap: 5px;
+}
+
+.grid-container-two div {
+  width: 100%;
+  height: 50px;
+  border: 0.5px solid black;
+  border-radius: 3px;
+}
+
+.redTwo {
+  background-color: red;
+  grid-column: span 4;
+}
+
+.blueTwo {
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 100% !important;
+}
+
+.greenTwo {
+  background-color: green;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.purpleTwo {
+  background-color: purple;
+}
