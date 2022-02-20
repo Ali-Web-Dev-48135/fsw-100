@@ -4,91 +4,152 @@
   box-sizing: border-box;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "redBox redBox blueBox blueBox"
-    "greenBox purpleBox purpleBox purpleBox"
-    "yellowBox yellowBox yellowBox yellowBox";
-  border: 1px solid black;
-  padding: 5px 5px;
-  grid-gap: 8px;
-  width: 50%;
-  margin: 10px auto;
-  background-color: lightgoldenrodyellow;
-}
-
-.grid-container div {
-  height: 25px;
-  border: 0.5px solid black;
-  border-radius: 3px;
-}
-
-.red {
-  background-color: red;
-  grid-area: redBox;
-}
-
-.blue {
-  background-color: blue;
-  grid-area: blueBox;
-}
-
-.green {
-  background-color: green;
-  grid-area: greenBox;
-}
-
-.purple {
-  background-color: purple;
-  grid-area: purpleBox;
-}
-
-.yellow {
-  background-color: yellow;
-  grid-area: yellowBox;
-}
-
 /* Styles For The Second Image Demonstration */
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    width: 50%;
+    margin: 10px auto;
+    background-color: lightyellow;
+    border: 1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px 5px;
+    grid-gap: 5px;
+    border-radius: 5px;
+  }
 
-.grid-container-two {
-  display: grid;
-  width: 50%;
-  margin: 10px auto;
-  background-color: lightyellow;
-  border: 1px solid black;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 5px 5px;
-  grid-gap: 5px;
+  .grid-container div {
+    width: 100%;
+    border: 0.5px solid black;
+    border-radius: 3px;
+  }
+
+  .red {
+    background-color: red;
+    height: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .blue {
+    background-color: blue;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    height: 20px;
+  }
+
+  .green {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    height: 20px;
+  }
+
+  .purple {
+    background-color: purple;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  .yellow {
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 20px;
+  }
 }
 
-.grid-container-two div {
-  width: 100%;
-  height: 50px;
-  border: 0.5px solid black;
-  border-radius: 3px;
+@media (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    width: 50%;
+    margin: 10px auto;
+    background-color: lightyellow;
+    border: 1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px 5px;
+    grid-gap: 5px;
+    border-radius: 5px;
+  }
+
+  .grid-container div {
+    width: 100%;
+    border: 0.5px solid black;
+    border-radius: 3px;
+  }
+
+  .red {
+    background-color: red;
+    height: 25px;
+    grid-column: span 4;
+  }
+
+  .blue {
+    background-color: blue;
+    height: 60px;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .green {
+    background-color: green;
+    height: 100%;
+    grid-column: span 2;
+  }
+
+  .yellow,
+  .purple {
+    background-color: purple;
+    height: 100%;
+  }
 }
 
-.redTwo {
-  background-color: red;
-  grid-column: span 4;
-}
+@media (max-width: 419px) {
+  .grid-container {
+    width: 50%;
+    margin: 10px auto;
+    background-color: lightyellow;
+    border: 1px solid black;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px 5px;
+    grid-gap: 5px;
+    border-radius: 5px;
+  }
 
-.blueTwo {
-  background-color: blue;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  height: 100% !important;
-}
+  .grid-container div {
+    width: 100%;
 
-.greenTwo {
-  background-color: green;
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
+    border: 0.5px solid black;
+    border-radius: 3px;
+  }
 
-.purpleTwo {
-  background-color: purple;
+  .red {
+    background-color: red;
+    height: 25px;
+    grid-column: span 2;
+  }
+
+  .blue {
+    background-color: blue;
+    height: 25px;
+    grid-column: span 2;
+  }
+
+  .green {
+    background-color: green;
+    height: 25px;
+    grid-column: span 2;
+  }
+
+  .yellow {
+    background-color: purple;
+    height: 25px;
+    grid-column: span 2;
+  }
+
+  .purple {
+    background-color: purple;
+    height: 25px;
+    grid-column: span 2;
+  }
 }

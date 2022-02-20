@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  /* width: 100%; */
+  height: auto;
+  max-width: 100%;
+  margin: 15rem 5px;
+  padding: 10px 10px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 75px;
+  border: 1px solid black;
+  margin: 0px 5px;
+}
+
+.item-1 {
+  transition: background-color 2000ms, transform 100ms, border-radius 100ms,
+    color 100ms ease-in;
+}
+
+.item-1:hover {
+  color: white;
+  border-radius: 3px;
+  background-color: brown;
+  transform: rotate(45deg);
+}
+
+.item-2 {
+  transition: background-color 250ms, box-shadow 900ms ease-out;
+}
+
+.item-2:hover {
+  color: white;
+  background-color: #333;
+  box-shadow: 2px 2px 2px red;
+}
+.item-3 {
+  transition: background-color 2s, color 1000ms, border-radius 1000ms;
+}
+
+.item-3:hover {
+  font-size: 2rem;
+  color: red;
+  border-radius: 50%;
+  background-color: lightblue;
+}
+
+.item-4 {
+  transition: height 250ms ease-in;
+}
+
+.item-4:hover {
+  height: 22px;
+  background-color: aqua;
+}
+.item-6 {
+  transition: 3000ms background-color, flex-shrink 200ms ease-in;
+}
+
+.item-6:hover {
+  flex-shrink: 3;
+  background-color: lightcoral;
+}
+
+.item-5 {
+  transition: 1000ms background-color, color 200ms, font-size 100ms ease-in-out;
+}
+
+.item-5:hover {
+  background-color: darkolivegreen;
+  color: white;
+  font-size: 1.9rem;
+}
