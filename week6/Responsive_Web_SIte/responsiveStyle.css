@@ -30,10 +30,14 @@ body {
 .main-nav a {
   text-shadow: 2px 2px 2px #333;
   cursor: pointer;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 0.3rem;
 }
 
 .main-nav a:hover {
   border-bottom: 5px solid white;
+  background-color: transparent;
 }
 
 .main-header .seperate-p {
@@ -93,6 +97,10 @@ span {
 
 .main-footer a:hover {
   border-bottom: 5px solid white;
+}
+
+.main-footer nav a {
+  font-size: 1.6rem;
 }
 
 .main-footer p {
