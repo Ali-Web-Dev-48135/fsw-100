@@ -1,0 +1,325 @@
+/* cursive font for header  */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+/* font-family: 'Cedarville Cursive', cursive; */
+
+/* professional font maybe for the title or who we are  */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+/* font-family: 'League Spartan', sans-serif; */
+
+/* section or blog font  */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* font-family: 'EB Garamond', serif; */
+
+.header-title,
+.footer-title{
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+
+
+body {
+  background-color: var(--clr-primary-light-orange);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--clr-primary-gray);
+  opacity: 90%;
+  width: 100%;
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+}
+
+
+.main-nav a:hover,
+.main-nav a:focus {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--clr-primary-orange);
+  text-decoration-thickness: 0.2rem;
+  
+}
+
+.header-title:hover,
+.header-title:focus {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--clr-primary-orange);
+  text-decoration-thickness: 0.2rem;
+}
+
+
+.hero {
+  background-image: url("../Images/Contact_Images/history_feedback_family.jpg");  
+  height: 20vh;
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  width: 90%;
+  min-width: 180px;
+  max-width: 600px;
+  margin: 0rem auto;
+  margin-top: 5rem;
+
+
+}
+
+
+
+
+/* main section styling  */
+
+main {
+    flex: 1;
+}
+
+.history-intro__p {
+  text-align: center;
+  padding: 0.5rem 0rem;
+  min-width: 180px;
+}
+
+.history-intro__p p {
+  text-align: justify;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0rem 0.5rem;
+  line-height: 1.2rem;
+  word-break: keep-all;
+}
+
+main img {
+  /* min-width: 170px; */
+  max-width: 175px;
+  border-radius: 0.5rem;
+}
+
+.family-article {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  min-width:180px;
+  border: 1px solid var(--clr-primary-gray);
+  margin-bottom: 0.3rem;
+}
+
+.family-article p {
+
+  padding: 0.5rem 0.2rem;
+  margin-bottom: 0.3rem;
+  word-break: keep-all;
+  text-align: justify;
+  color: black;
+}
+
+/* form section styling  */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 5px solid red; */
+  background-color: var(--clr-primary-light-green-one);
+  padding: 0.5rem 0rem;
+  overflow: hidden;
+  min-width:180px;
+}
+
+.form-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  text-align: center;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 0rem;
+  padding-left: 0.5rem;
+  width: 70%;
+  margin: 0rem auto;
+  overflow: hidden;
+}
+
+input,textarea {
+  margin-top: 0.5rem;
+  min-width: 50%;
+  padding-left: 0.3rem;
+}
+
+textarea {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.9rem;
+}
+
+label {
+  font-size: 1.1rem;
+  /* border: 1px solid white; */
+  /* align-self: flex-start; */
+}
+
+input {
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+  height: 1.5rem;
+  padding: 0rem 0.8rem;
+  margin-bottom:  0.5rem;
+}
+
+input:focus {
+  outline: none;
+  border: 0.3rem solid var(--clr-primary-light-white);
+}
+
+
+
+.ctaBtn {
+  background-color: var(--clr-primary-gray);
+  width: 9rem;
+  height: 2rem;
+  border: var(--clr-primary-light-white);
+  border-radius: 0.2rem;
+  margin: 1rem 0rem;
+  color: var(--clr-primary-light-white);
+  padding: 0.2rem 0.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family:'League Spartan', sans-serif;
+}
+
+.ctaBtn:hover,
+.ctaBtn:focus {
+  background-color: darkgreen;
+  color: white;
+  border: 0.1rem solid var(--clr-primary-light-white);
+
+}
+
+
+
+
+
+/* footer styles below  */
+
+.main-footer {
+    margin-top: auto;
+    border: 0.1rem solid var(--clr-primary-gray);
+    height: auto;
+    background-color: var(--clr-primary-gray);
+    
+  }
+  
+.main-footer .footer-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.footer-main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  
+  .footer-navbar a {
+    padding: 0.3rem 0rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-navbar a:hover,
+  .footer-navbar a:focus {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--clr-primary-orange);
+    text-decoration-thickness: 0.2rem;
+  }
+  
+  
+  .footer-navbar p {
+    color: var(--clr-primary-light-green-one);
+    padding: 0.3rem 0rem;
+  }
+  
+  
+
+  @media screen and (min-width: 480px) {
+    .hero {
+      height: 25vh;
+      max-width: 470px;
+    }
+  
+    .history-intro__p {
+      /* max-width: 480px; */
+      /* text-align: center; */
+      margin: 0rem auto;
+    }
+  
+    .history-intro__p p {
+      max-width: 480px;
+    }
+  
+    .family-article {
+      border: 3px solid var(--clr-primary-light-white);
+    }
+  
+    .family-article p {
+      max-width: 480px;
+    }
+  
+    main img {
+      min-width: 300px;
+      box-shadow: 2px 2px 1px white;
+      
+    }
+  
+    .form-title {
+      font-size: 1.4rem;
+    }
+  
+  .main-form {
+    align-items: center;
+  }
+  
+  input {
+    height: 30px;
+  }
+  
+  
+  input,
+  textarea {
+    font-size: 1.1rem;
+  }
+  
+  textarea {
+    width: 80%;
+  }
+  
+  .ctaBtn {
+    width: 11rem;
+    height: 2.5rem;
+  }
+  
+  
+  
+  }
+  
+
