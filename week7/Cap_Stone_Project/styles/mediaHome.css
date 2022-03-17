@@ -41,8 +41,6 @@
 }
 
 .gallery-section img {
-    align-self: stretch;
-    min-height: 105px;
     max-height: 100px;
     border: 1px solid white;
 
